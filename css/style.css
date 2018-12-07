@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/*---------------------------------------
+    restCSS
+----------------------------------------*/
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}p{margin-bottom:1em;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}
+
+
+.container {
+  width: 1000px;
+}
+.bg-blue {
+  background: #1f99f7;
+}
+.bg-dark {
+  background: #3d3d3d;
+}
+
+/*----------------------------------------
+    header
+/* Menu */
+.menu {
+  color: white;
+  text-align: center;
+  font-family: "Meiryo";
+}
+.menu .nav {
+  display: flex;
+  justify-content: center;
+}
+.menu .nav-item{
+  flex: 1;
+}
+.menu .nav-link {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  max-height: 60px;
+}
+.menu .nav-link.active, .nav-link:hover {
+  background: #6dbdfa;
+  cursor: pointer;
+}
+
+/* Breadcum */
+.breadcum {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.breadcrumb-item a {
+  text-decoration: none;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: black;
+  content: ">";
+}
+.breadcrumb-item.active {
+  color: black;
+}
+
+
+/*  Aside left and right
+----------------------------------------*/
+.left-content {
+  width: 750px;
+  padding: 20px;
+}
+
+
+/*  title
+----------------------------------------*/
+.left-content .title {
+  color: #ff7200;
+}
+.left-content .title-icon {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #ff7200;
+}
+.left-content .title-icon .icon-html {
+  background-image: url("../img/img_2.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.left-content .title-2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+/* paragraph */
+.paragrap {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #3d3d3d;
+  text-align: justify;
+}
+.paragrap img {
+  margin-right: 14px;
+}
+.paragrap.img-right {
+  line-height: 30px;
+}
+.paragrap.img-right img{
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/* List link */
+.list-link {
+  font-size: 14px;
+  line-height: 30px;
+}
+.list-link .item-link {
+  color: #1f99f7;
+}
+.list-link .item-link::before {
+  content: '';
+  margin: 0 10px;
+  display: inline-block;
+  background: url(../img/img_6.png);
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+}
+
+
+/*----------------------------------------
+    right content
+----------------------------------------*/
+.right-content {
+  width: 250px;
+  padding-top: 75px;
+  background-color: #3d3d3d;
+}
+.right-content h2 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #ff7200;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.right-content .nav-item:not(:first-child) {
+  border-top: 1px solid black;
+}
+.right-content .nav-link {
+  background-color: #1f99f7;
+  color: white;
+}
+.right-content .nav-link.active, .nav-link:hover {
+  background: #6dbdfa;
+}
+
+/*----------------------------------------
+    column
+----------------------------------------*/
+.wrap-column {
+  display: flex;
+  margin: 0 -10px;
+}
+.wrap-column .column-2 {
+  flex: 1 1 50%;
+  padding: 10px;
+}
+.wrap-column.column-border > div:not(:first-child) {
+  border-left: 1px dashed #3d3d3d;
+}
+
+/* Image next to title */
+.img-title {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #e7edf2;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.img-title span {
+  margin-left: 15px;
+  color: #1f99f7;
+}
+
+
+/*----------------------------------------
+    footer
+----------------------------------------*/
+.sitemap {
+  padding: 35px 0;
+}
+.sitemap .title {
+  color: #ffea00;
+}
+.sitemap {
+  color: white;
+}
+
+.copy-right {
+  padding: 10px;
+  min-height: 80px;
+}
+
+.copy-right img {
+  float: right;
+}
+
+
+/*  title
+----------------------------------------*/
+
+
