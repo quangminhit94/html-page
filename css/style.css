@@ -18,6 +18,22 @@ html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fi
 
 /*----------------------------------------
     header
+/* Banner */
+.banner {
+  min-height: 128px;
+}
+.banner .container {
+  position: relative;
+}
+.banner img{
+  position: absolute;
+  z-index: -1;
+  width: 280px;
+  height: 128px;
+  top: 0;
+  left: -25px;
+}
+
 /* Menu */
 .menu {
   color: white;
@@ -167,11 +183,11 @@ html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fi
 ----------------------------------------*/
 .wrap-column {
   display: flex;
-  margin: 0 -10px;
+  margin: 0 -20px;
 }
 .wrap-column .column-2 {
   flex: 1 1 50%;
-  padding: 10px;
+  padding: 20px;
 }
 .wrap-column.column-border > div:not(:first-child) {
   border-left: 1px dashed #3d3d3d;
@@ -188,6 +204,7 @@ html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fi
 }
 .img-title span {
   margin-left: 15px;
+  font-size: 16px;
   color: #1f99f7;
 }
 
@@ -196,22 +213,61 @@ html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fi
     footer
 ----------------------------------------*/
 .sitemap {
-  padding: 35px 0;
+  color: white;
 }
+.sitemap .bubble-top {
+  padding: 35px 0;
+  position: relative;
+}
+.sitemap .bubble-top::before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  border-style: solid;
+  left: 0;
+  top: -27px;
+  border-width: 0 27px 27px 27px;
+  border-color: transparent transparent #1f99f7 transparent;
+}
+.sitemap .bubble-top::after {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: 'Page Top';
+  top: -27px;
+  left: 52px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #1f99f7
+}
+
 .sitemap .title {
   color: #ffea00;
+  margin-bottom: 5px;
 }
-.sitemap {
-  color: white;
+.sitemap .line {
+  border-top: 1px dashed white;
+  margin: 20px 0;
+}
+
+.sitemap-list {
+  font-size: 12px;
+  line-height: 30px;
+}
+.sitemap-list .sitemap-item:first-child .sitemap-link {
+  color: #ffea00;
+  font-size: 14px;
+  font-weight: 500
+}
+.sitemap-list .sitemap-link{
+  color: white
 }
 
 .copy-right {
   padding: 10px;
   min-height: 80px;
-}
-
-.copy-right img {
-  float: right;
 }
 
 
